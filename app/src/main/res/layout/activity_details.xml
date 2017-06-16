@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="josemarq.elprattourguideapp.DetailsActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/feature_image"
+            style="@style/imagen_details"
+            tools:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/titulo"
+            style="@style/titulo"
+            tools:text="Titulo del Lugar" />
+
+        <TextView
+            android:id="@+id/emoji"
+            style="@style/emoji"
+            tools:text="emoji" />
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/card_view"
+            style="@style/cards"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/descripcion"
+                style="@style/descripcion"
+                tools:text="@string/lorem" />
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>
+
+

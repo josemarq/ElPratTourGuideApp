@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Layout for a single list item -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_item_height"
+    android:minHeight="@dimen/list_item_height">
+
+    <LinearLayout
+        android:id="@+id/imagen_layout"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:padding="2dp">
+
+        <ImageView
+            android:id="@+id/image"
+            style="@style/imagen_list"
+            tools:src="@drawable/img_avions" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/text_container"
+        style="@style/text_container"
+        android:layout_toRightOf="@id/imagen_layout">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/titulo_list"
+            tools:text="Mirador del Prat de Llobregat" />
+
+        <TextView
+            android:id="@+id/description"
+            style="@style/descripcion_list"
+            android:layout_below="@id/title"
+            android:layout_weight="1"
+            tools:text="@string/lorem" />
+
+        <TextView
+            android:id="@+id/emoji"
+            style="@style/emoji_list"
+            android:layout_below="@id/title"
+            tools:text="@string/lorem" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
